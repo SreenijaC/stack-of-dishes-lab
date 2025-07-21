@@ -38,10 +38,9 @@ public class App {
 
         System.out.println("Popping until empty:\n");
 
-        // popping the remaining dishes
         dishStack.pop();
         dishStack.pop();
-        dishStack.pop(); // now the stack is empty
+        dishStack.pop(); // stack is empty
 
         // stack empty now, size should be 0
         System.out.println("Stack size now: " + dishStack.size() + " (should be 0)\n");
