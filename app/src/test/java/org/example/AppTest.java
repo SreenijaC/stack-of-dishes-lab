@@ -4,11 +4,18 @@
 package org.example;
 
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
-    @Test void appHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
+
+    @Test
+    void appRunsWithoutErrors() {
+        // simple test to just run main method without exception
+        try {
+            App.main(new String[0]);
+        } catch (Exception e) {
+            fail("App.main threw an exception: " + e.getMessage());
+        }
     }
 }
